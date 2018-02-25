@@ -1,0 +1,19 @@
+{
+  "name": "@neil188/studioghibliapi",
+  "version": "0.1.0",
+  "description": "Connecting to a API with Javascript",
+  "main": "index.html",
+  "scripts": {},
+  "author": "N Lupton",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-html": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-prettier": "*",
+    "prettier": "^1.10.2"
+  }
+}
