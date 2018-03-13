@@ -10,3 +10,13 @@ Updated to use fetch API, widely [supported](https://caniuse.com/#feat=fetch) in
 Note a [polyfill](https://github.com/github/fetch) is available, but as this is only a demo I haven't included it.
 
 logo.png included from [Tania Rascia's ghibli project](https://github.com/taniarascia/sandbox/tree/master/ghibli)
+
+## Installation Instructions
+
+1. Clone locally using:
+
+    `git clone https://github.com/Neil188/studioghibliapi.git`
+
+2. Install dependencies (Eslint and prettier, no dependencies required to run the code so this can be skipped) :
+
+    `npm install`
