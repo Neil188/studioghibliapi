@@ -1,18 +1,22 @@
 {
   "name": "@neil188/studioghibliapi",
-  "version": "0.1.0",
-  "description": "Connecting to a API with Javascript",
+  "version": "1.0.0",
+  "description": "Connecting to an API with Javascript",
   "main": "index.html",
   "scripts": {
     "minJS": "babel-minify scripts.js -o dist/scripts.min.js --mangle",
     "minCSS1": "csso style.css --output dist/style.min.css",
     "minCSS2": "csso marquee.css --output dist/marquee.min.css",
     "minCSS": "npm run minCSS1 && npm run minCSS2",
-    "build": "npm run minJS && npm run minCSS"
+    "build": "npm run minJS && npm run minCSS",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "N Lupton",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "gh-pages": "^1.1.0"
+  },
   "devDependencies": {
     "babel-minify": "^0.3.0",
     "csso-cli": "^1.1.0",
@@ -23,5 +27,10 @@
     "eslint-plugin-import": "*",
     "eslint-plugin-prettier": "*",
     "prettier": "^1.10.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Neil188/studioghibliapi"
+  },
+  "homepage": "https://Neil188.github.io/studioghibliapi"
 }
