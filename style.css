@@ -19,6 +19,7 @@ html {
     line-height: 1.6;
     color: var(--color1);
     background: #F6F6F6;
+    overflow: hidden;
 }
 
 h1 {
@@ -99,3 +100,15 @@ p {
 .card:nth-child(5n) h1 {
     background-image: linear-gradient(120deg, var(--color5) 0%, var(--color4) 50%, var(--color1) 100%);
 }
+
+.marquee {
+    color: red;
+    position: relative;
+    overflow: hidden;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% { left: 100%; }
+    100% { left: -50%; }
+  }

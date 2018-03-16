@@ -41,9 +41,12 @@ fetch(URL)
     })
     .then(data => data.forEach( buildCard ))
     .catch(error => {
-        const errorMessage = document.createElement('marquee');
+        const marquee = document.createElement('div');
+        marquee.classList.add('marquee');
+        const errorMessage = document.createElement('p');
         errorMessage.textContent = `It broke! ${error}`;
-        app.appendChild(errorMessage);
+        marquee.appendChild(errorMessage);
+        app.appendChild(marquee);
     }
     );
 
