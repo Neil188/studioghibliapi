@@ -1,4 +1,4 @@
-# Studio Ghibli API
+# [Studio Ghibli API](https://github.com/Neil188)
 
 > [Tania Rascia's How to Connect to an API with JavaScript article](https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/)
 
@@ -9,7 +9,8 @@ A simple web app that connects to a Studio Ghibli API, retrieves the data with J
 Updated to use fetch API, widely [supported](https://caniuse.com/#feat=fetch) in most modern browsers.
 Note a [polyfill](https://github.com/github/fetch) is available, but as this is only a demo I haven't included it.
 
-logo.png included from [Tania Rascia's ghibli project](https://github.com/taniarascia/sandbox/tree/master/ghibli)
+logo.png included from [Tania Rascia's ghibli project](https://github.com/taniarascia/sandbox/tree/master/ghibli).
+Optimised using [Optimzilla](http://optimizilla.com/).
 
 ## Installation Instructions
 
