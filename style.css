@@ -3,8 +3,6 @@
 }
 
 #root {
-    max-width: 1200px;
-    margin: 0 auto;
     --color1: #425E4F;
     --color2: #3BC0C4;
     --color3: #578F91;
@@ -13,12 +11,8 @@
 }
 
 html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     font-family: 'Dosis', sans-serif;
-    line-height: 1.6;
     color: var(--color1);
-    background: #F6F6F6;
 }
 
 h1 {
@@ -28,17 +22,6 @@ h1 {
     margin: 0 0 2rem 0;
     font-size: 1.5rem;
     color: white;
-}
-
-img {
-    display: block;
-    margin: 1rem auto;
-    max-width: 100%;
-}
-
-p {
-    padding: 0 2.5rem 2.5rem;
-    margin: 0;
 }
 
 /* Use flexbox to layout cards, wrapping onto multiple lines */
@@ -99,18 +82,3 @@ p {
 .card:nth-child(5n) h1 {
     background-image: linear-gradient(120deg, var(--color5) 0%, var(--color4) 50%, var(--color1) 100%);
 }
-
-.marquee {
-    overflow: hidden;
-}
-
-.marquee > p {
-    color: red;
-    position: relative;
-    animation: marquee 15s linear infinite;
-}
-
-@keyframes marquee {
-    0% { left: 100%; }
-    100% { left: -50%; }
-  }

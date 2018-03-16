@@ -1,0 +1,14 @@
+.marquee {
+    overflow: hidden;
+}
+
+.marquee > p {
+    color: red;
+    position: relative;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% { left: 100%; }
+    100% { left: -50%; }
+  }
