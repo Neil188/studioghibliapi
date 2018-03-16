@@ -3,11 +3,19 @@
   "version": "0.1.0",
   "description": "Connecting to a API with Javascript",
   "main": "index.html",
-  "scripts": {},
+  "scripts": {
+    "minJS": "babel-minify scripts.js -o dist/scripts.min.js --mangle",
+    "minCSS1": "csso style.css --output dist/style.min.css",
+    "minCSS2": "csso marquee.css --output dist/marquee.min.css",
+    "minCSS": "npm run minCSS1 && npm run minCSS2",
+    "build": "npm run minJS && npm run minCSS"
+  },
   "author": "N Lupton",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "babel-minify": "^0.3.0",
+    "csso-cli": "^1.1.0",
     "eslint": "*",
     "eslint-config-airbnb-base": "*",
     "eslint-config-prettier": "*",
