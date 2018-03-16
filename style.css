@@ -19,7 +19,6 @@ html {
     line-height: 1.6;
     color: var(--color1);
     background: #F6F6F6;
-    overflow: hidden;
 }
 
 h1 {
@@ -102,9 +101,12 @@ p {
 }
 
 .marquee {
+    overflow: hidden;
+}
+
+.marquee > p {
     color: red;
     position: relative;
-    overflow: hidden;
     animation: marquee 15s linear infinite;
 }
 
