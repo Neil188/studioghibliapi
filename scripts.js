@@ -1,3 +1,23 @@
+( () => {
+    const font = document.createElement('link');
+    const marquee =  document.createElement('link');
+    const style =  document.createElement('link');
+    font.type = 'text/css';
+    marquee.type = 'text/css';
+    style.type = 'text/css';
+    font.rel = 'stylesheet';
+    marquee.rel = 'stylesheet';
+    style.rel = 'stylesheet';
+    font.href = 'https://fonts.googleapis.com/css?family=Dosis';
+    marquee.href = 'marquee.min.css';
+    style.href = 'style.min.css';
+    const firstLink = document.getElementsByTagName('link')[0];
+    firstLink.parentNode.insertBefore(font, firstLink);
+    firstLink.parentNode.insertBefore(marquee, firstLink);
+    firstLink.parentNode.insertBefore(style, firstLink);
+})();
+
+
 const URL = 'https://ghibliapi.herokuapp.com/films';
 const app = document.querySelector('#root');
 
