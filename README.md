@@ -2,7 +2,7 @@
 
 > [Tania Rascia's How to Connect to an API with JavaScript article](https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/)
 
-![Logo of the project](./images/ghibliapp.png)
+![Logo of the project](./dist/images/ghibliapp.png)
 
 A simple web app that connects to a Studio Ghibli API, retrieves the data with JavaScript, and displays it on the front end of a website.
 
