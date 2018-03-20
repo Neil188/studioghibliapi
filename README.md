@@ -40,8 +40,8 @@ Optimised using [Optimzilla](http://optimizilla.com/).
 After any changes re-run Chrome DevTools Audits to make sure results have not significantly changed.
 Last report has been stored in audits folder.  Scores:
 
-* Performance 90
+* Performance 95
 * Progressive Web App 55 (not built as a web app so can ignore)
 * Accessibility 100
-* Best Practices 100
+* Best Practices 94
 * SEO 100
