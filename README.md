@@ -1,4 +1,4 @@
-# [Studio Ghibli API](https://github.com/Neil188)
+# [Studio Ghibli API](https://neil188.github.io/studioghibliapi/)
 
 > [Tania Rascia's How to Connect to an API with JavaScript article](https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/)
 
