@@ -26,7 +26,7 @@ container.setAttribute('class', 'container');
 
 app.appendChild(container);
 
-const buildCard = ({title, description}) => {
+const buildCard = ({ title, description }) => {
     // create a div with card class
     const card = document.createElement('div');
     card.setAttribute('class', 'card');
