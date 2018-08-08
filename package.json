@@ -4,7 +4,9 @@
   "description": "Connecting to an API with Javascript",
   "main": "index.html",
   "scripts": {
-    "lint": "eslint scripts.js",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint scripts.js",
+    "stylelint": "stylelint *.css",
     "minJS": "babel-minify scripts.js -o dist/scripts.min.js --mangle",
     "minCSS1": "csso style.css --output dist/style.min.css",
     "minCSS2": "csso marquee.css --output dist/marquee.min.css",
@@ -20,7 +22,8 @@
   },
   "devDependencies": {
     "@neil188/eslint-config": "^1.1.0",
-    "babel-minify": "^0.3.0",
+    "@neil188/stylelint-config": "^1.0.0",
+    "babel-minify": "^0.4.3",
     "csso-cli": "^1.1.0",
     "eslint": "^5.3.0",
     "prettier": "^1.10.2"
