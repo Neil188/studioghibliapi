@@ -1,1 +1,1 @@
-@keyframes marquee{0%{left:100%}to{left:-50%}}.marquee{overflow:hidden}.marquee>p{color:red;position:relative;animation:marquee 15s linear infinite}
+@keyframes marquee{0%{left:100%}to{left:-50%}}.marquee{overflow:hidden}.marquee>p{animation:marquee 15s linear infinite;color:red;position:relative}@media screen and (prefers-reduced-motion:reduce){.marquee>p{animation:none}}
