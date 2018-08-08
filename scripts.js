@@ -18,7 +18,7 @@
 })();
 
 
-const URL = 'https://ghibliapi.herokuapp.com/films';
+const URL = 'https://us-central1-studio-ghibli-fetch.cloudfunctions.net/studioghiblifetch';
 const app = document.querySelector('#root');
 
 const container = document.createElement('div');
@@ -39,7 +39,7 @@ const buildCard = ({ title, description }) => {
 
     // Create a p and set the text content to the film's description
     const p = document.createElement('p');
-    p.textContent = `${description.substring(0, 300)}..`;
+    p.textContent = description;
 
     card.appendChild(p);
 
