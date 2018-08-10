@@ -18,7 +18,7 @@
 })();
 
 
-const URL = 'https://us-central1-studio-ghibli-fetch.cloudfunctions.net/studioghiblifetch';
+const URL = 'https://goo.gl/FWEsQE';
 const app = document.querySelector('#root');
 
 const container = document.createElement('div');
