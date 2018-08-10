@@ -9,6 +9,10 @@ A simple web app that connects to a Studio Ghibli API, retrieves the data with J
 Updated to use fetch API, widely [supported](https://caniuse.com/#feat=fetch) in most modern browsers.
 Note a [polyfill](https://github.com/github/fetch) is available, but as this is only a demo I haven't included it.
 
+The fetch to the Studio Ghibli API, and the processing to limit the description to 300 characters
+has been moved to a Google Cloud Function - see the [Studio Ghibli Fetch repo](https://github.com/Neil188/studioghiblifetch)
+just to let me try out setting up a cloud function.
+
 logo.png included from [Tania Rascia's ghibli project](https://github.com/taniarascia/sandbox/tree/master/ghibli).
 Optimised using [Optimzilla](http://optimizilla.com/).
 
@@ -28,6 +32,9 @@ Optimised using [Optimzilla](http://optimizilla.com/).
 
     Files can now be tested from dist/index.html
 
+Note: the CORS settings will block any other origin, so you will need to set up
+your own Google Function (or just pull the fetch processing back into this project).
+
 4. To push latest build to Git Hub pages:
 
     `npm run deploy`
@@ -40,8 +47,8 @@ Optimised using [Optimzilla](http://optimizilla.com/).
 After any changes re-run Chrome DevTools Audits to make sure results have not significantly changed.
 Last report has been stored in audits folder.  Scores:
 
-* Performance 95
+* Performance 100
 * Progressive Web App 55 (not built as a web app so can ignore)
 * Accessibility 100
 * Best Practices 94
-* SEO 100
+* SEO 90
