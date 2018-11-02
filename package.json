@@ -1,36 +1,36 @@
 {
-  "name": "@neil188/studioghibliapi",
-  "version": "1.0.0",
-  "description": "Connecting to an API with Javascript",
-  "main": "index.html",
-  "scripts": {
-    "lint": "npm run eslint && npm run stylelint",
-    "eslint": "eslint scripts.js",
-    "stylelint": "stylelint *.css",
-    "minJS": "babel-minify scripts.js -o dist/scripts.min.js --mangle",
-    "minCSS1": "csso style.css --output dist/style.min.css",
-    "minCSS2": "csso marquee.css --output dist/marquee.min.css",
-    "minCSS": "npm run minCSS1 && npm run minCSS2",
-    "build": "npm run minJS && npm run minCSS",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-  "author": "N Lupton",
-  "license": "MIT",
-  "dependencies": {
-    "gh-pages": "^1.2.0"
-  },
-  "devDependencies": {
-    "@neil188/eslint-config": "^1.1.0",
-    "@neil188/stylelint-config": "^1.0.0",
-    "babel-minify": "^0.4.3",
-    "csso-cli": "^1.1.0",
-    "eslint": "^5.3.0",
-    "prettier": "^1.14.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Neil188/studioghibliapi"
-  },
-  "homepage": "https://Neil188.github.io/studioghibliapi"
+    "name": "@neil188/studioghibliapi",
+    "version": "1.0.1",
+    "description": "Connecting to an API with Javascript",
+    "main": "index.html",
+    "scripts": {
+        "lint": "npm run eslint && npm run stylelint",
+        "eslint": "eslint scripts.js",
+        "stylelint": "stylelint *.css",
+        "minJS": "babel-minify scripts.js -o dist/scripts.min.js --mangle",
+        "minCSS1": "csso style.css --output dist/style.min.css",
+        "minCSS2": "csso marquee.css --output dist/marquee.min.css",
+        "minCSS": "npm run minCSS1 && npm run minCSS2",
+        "build": "npm run minJS && npm run minCSS",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
+    },
+    "author": "N Lupton",
+    "license": "MIT",
+    "dependencies": {
+        "gh-pages": "^2.0.1"
+    },
+    "devDependencies": {
+        "@neil188/eslint-config": "^1.4.1",
+        "@neil188/stylelint-config": "^1.3.0",
+        "babel-minify": "^0.5.0",
+        "csso-cli": "^1.1.0",
+        "eslint": "^5.8.0",
+        "prettier": "^1.14.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Neil188/studioghibliapi"
+    },
+    "homepage": "https://Neil188.github.io/studioghibliapi"
 }

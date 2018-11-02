@@ -54,7 +54,7 @@ fetch(URL)
         if (res.ok) {
             return res.json()
         }
-        return Promise.reject(new Error (
+        return Promise.reject(new Error(
             `Network response was not ok - Status ${res.status}-${res.statusText}`
         )
         );
